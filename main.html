@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>FlashDeck</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pics/transparent_logo.png">
+</head>
+<body> 
+        <center>
+            <div class="header">
+                 <div class="inner_header">
+                    <ul class="navigation">
+                        <a><li>Create</li></a>
+                        <a><li>Deck</li></a>
+                        <a href="#" onclick="window.location.reload();"><li><img src="pics/square_logo.png" height="50" width="50" id="main_logo"></li></a>
+                        <a><li>Study</li></a>
+                        <a><li>About</li></a>
+                    </ul>
+                 </div>
+            </div>   
+            <h1 id="home_page_text">Create your flash card: </h1>
+            <h1>Deck:</h1>
+            <div class = "dropdown">
+                <button onclick="toggleDropdown()">Dropdown</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <p>Option 1</p>
+                    <p>Option 2</p>
+                    <p>Option 3</p>
+                </div>
+            </div>
+            <h1>Front:</h1>
+            <h1>Back:</h1>
+            <div class="container">
+                <input class="btn" id="Button1" type="button" value="Add" onclick="" />
+            </div>
+            <p id="demo"></p>
+        </center>
+    </div>
+    <div class="blur-container"
+     style="--blur:12vw;">
+  
+  <div class="shape" 
+       style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);"></div>
+  
+  <div class="shape" 
+       style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);
+       --offset:180deg;
+       --speed: 6000ms;
+       --background: linear-gradient(  #CBC3E3, #D8BFD8,#CCCCFF, #C9A9A6);
+       "></div>
+</div>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
